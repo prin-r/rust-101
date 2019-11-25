@@ -1,0 +1,17 @@
+[package]
+name = "merkle_tree"
+version = "0.1.0"
+authors = ["prin-r <q@bandprotocol.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tiny-keccak = { version = "2.0.1", features = ["sha3"] }
+bit-vec = "0.6"
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
